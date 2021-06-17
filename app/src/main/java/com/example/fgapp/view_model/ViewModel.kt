@@ -1,10 +1,12 @@
 package com.example.fgapp.view_model
+import com.example.fgapp.model.Model
+import com.example.fgapp.model.ClientManager
+import java.util.concurrent.Future
 
 object ViewModel : ConnectionVM, ControllersVM {
-    val model = Model()
-    override fun connect(ip: String, port: Int): Boolean {
-        isConnected = model.connect(ip, port)
-        return isConnected
+    private val model: Model = ClientManager()
+    override fun connect(ip: String, port: Int): Future<Boolean>? {
+        return  model.connect(ip, port)
     }
 
     override var isConnected: Boolean = false
@@ -28,5 +30,4 @@ object ViewModel : ConnectionVM, ControllersVM {
     override fun disconnect() {
         model.disconnect()
     }
-
 }
