@@ -20,12 +20,14 @@ class ClientManager : Model {
 
         return threadPool?.submit(Callable{
                 try {
-                    val socket = Socket()
-                    socket.connect(InetSocketAddress(ip, port), connTimeout)
-                    out = PrintWriter(socket.getOutputStream(), true)
+                    socket = Socket()
+                    socket!!.connect(InetSocketAddress(ip, port), connTimeout)
+                    out = PrintWriter(socket!!.getOutputStream(), true)
                 } catch (tExp: java.net.SocketTimeoutException) {
                     return@Callable false
                 }catch (ioExp: java.io.IOException) {
+                    return@Callable false
+                }catch (ioExp: NullPointerException) {
                     return@Callable false
                 }
 
@@ -41,6 +43,9 @@ class ClientManager : Model {
 
         threadPool?.shutdown()
         threadPool = null
+
+        out?.close()
+        out = null
     }
 
     override fun changeVar(varName: String, value: Float) {
@@ -48,8 +53,14 @@ class ClientManager : Model {
             return
         }
 
+
         threadPool?.execute{
-            out?.print("set /controls/flight/$varName$value\r\n")
+            var startString = "set /controls/flight/"
+            if(varName == "throttle"){
+                startString = "set /controls/engines/current-engine/"
+            }
+
+            out?.print("$startString$varName $value\r\n")
             out?.flush()
         }
     }

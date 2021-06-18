@@ -3,6 +3,7 @@ package com.example.fgapp.view
 import android.content.Context
 import android.graphics.Color
 import android.graphics.Paint
+import android.graphics.PixelFormat
 import android.graphics.PorterDuff
 import android.util.AttributeSet
 import android.view.MotionEvent
@@ -28,6 +29,8 @@ class Joystick: SurfaceView, Callback, View.OnTouchListener {
     }
 
     constructor (c: Context): super(c){
+        setZOrderOnTop(true)
+        holder.setFormat(PixelFormat.TRANSLUCENT)
         holder.addCallback(this)
         setOnTouchListener(this)
         if (context is JoystickListener) {
@@ -35,6 +38,8 @@ class Joystick: SurfaceView, Callback, View.OnTouchListener {
         }
     }
     constructor (c: Context, a: AttributeSet, style:Int): super(c, a, style){
+        setZOrderOnTop(true)
+        holder.setFormat(PixelFormat.TRANSLUCENT)
         holder.addCallback(this)
         setOnTouchListener(this)
         if (context is JoystickListener) {
@@ -42,6 +47,8 @@ class Joystick: SurfaceView, Callback, View.OnTouchListener {
         }
     }
     constructor (c: Context, a: AttributeSet): super(c,a){
+        setZOrderOnTop(true)
+        holder.setFormat(PixelFormat.TRANSLUCENT)
         holder.addCallback(this)
         setOnTouchListener(this)
         if (context is JoystickListener) {

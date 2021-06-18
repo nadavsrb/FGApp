@@ -10,4 +10,6 @@
     <string name="fg_ip">FG IP:</string>
     <string name="fg_port">FG Port:</string>
     <string name="connect_to_fg">Connect To FG</string>
+    <string name="rudder">Rudder</string>
+    <string name="throttle">Throttle</string>
 </resources>

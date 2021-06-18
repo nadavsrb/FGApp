@@ -14,13 +14,13 @@ object ViewModel : ConnectionVM, ControllersVM {
         set(value) {
             model.changeVar("aileron", value)
         }
-    override var rudder: Float = 0.0F
+    override var rudder: Int = 100
         set(value) {
-            model.changeVar("rudder", value)
+            model.changeVar("rudder", (value.toFloat() / 100) - 1)
         }
-    override var throttle: Float = 0.0F
+    override var throttle: Int = 0
         set(value) {
-            model.changeVar("throttle", value)
+            model.changeVar("throttle", value.toFloat() / 100)
         }
     override var elevator: Float = 0.0F
         set(value) {
