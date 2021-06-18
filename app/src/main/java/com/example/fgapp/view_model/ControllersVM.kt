@@ -2,10 +2,10 @@ package com.example.fgapp.view_model
 
 interface ControllersVM {
     var isConnected: Boolean
-    var aileron: Double
-    var rudder: Double
-    var throttle: Double
-    var elevator: Double
+    var aileron: Float
+    var rudder: Float
+    var throttle: Float
+    var elevator: Float
     fun disconnect()
 
 }

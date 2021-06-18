@@ -10,19 +10,19 @@ object ViewModel : ConnectionVM, ControllersVM {
     }
 
     override var isConnected: Boolean = false
-    override var aileron: Double = 0.0
+    override var aileron: Float = 0.0F
         set(value) {
             model.changeVar("aileron", value)
         }
-    override var rudder: Double = 0.0
+    override var rudder: Float = 0.0F
         set(value) {
             model.changeVar("rudder", value)
         }
-    override var throttle: Double = 0.0
+    override var throttle: Float = 0.0F
         set(value) {
             model.changeVar("throttle", value)
         }
-    override var elevator: Double = 0.0
+    override var elevator: Float = 0.0F
         set(value) {
             model.changeVar("elevator", value)
         }

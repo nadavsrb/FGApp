@@ -43,7 +43,7 @@ class ClientManager : Model {
         threadPool = null
     }
 
-    override fun changeVar(varName: String, value: Double) {
+    override fun changeVar(varName: String, value: Float) {
         if(socket == null || out == null) {
             return
         }
