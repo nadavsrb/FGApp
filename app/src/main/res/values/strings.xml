@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">FGApp</string>
+    <string name="error_ip">Error: This Isn\'t An IP!!!</string>
+    <string name="error_port">Error: Port Should Be An Integer!!!</string>
+    <string name="error_missing_fields">Error: Missing Fields!!!</string>
+    <string name="error_failed_connecting">Error: Unable To Connect FG!!!</string>
+    <string name="connecting">Trying To Connect...</string>
 </resources>
