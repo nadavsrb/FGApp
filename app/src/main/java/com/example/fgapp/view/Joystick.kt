@@ -139,9 +139,11 @@ class Joystick: SurfaceView, Callback, View.OnTouchListener {
                     val constrainedY = centerY + (event.y - centerY) * ratio
                     drawJoystick(constrainedX, constrainedY)
                 }
-            } else{
-                drawJoystick(centerX, centerY)
             }
+//We think it's better not to return the Joystick to 0,0
+//            else{
+//                drawJoystick(centerX, centerY)
+//            }
         }
 
         return true
