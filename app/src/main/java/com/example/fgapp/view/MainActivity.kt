@@ -19,6 +19,11 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
+    override fun onResume() {
+        super.onResume()
+        findViewById<TextView>(R.id.errorLog).setText(R.string.empty_str)
+    }
+
     fun connectFG(view: View){
         val ip = findViewById<EditText>(R.id.ipField).text.toString()
         val portText = findViewById<EditText>(R.id.portField).text.toString()

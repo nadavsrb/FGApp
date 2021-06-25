@@ -19,6 +19,11 @@ class ControllersActivity : AppCompatActivity(), Joystick.JoystickListener {
         binding.contrller = contrVM
     }
 
+    override fun onPause() {
+        super.onPause()
+        contrVM.disconnect()
+    }
+
     override fun onJoystickMoved(xPercent: Float, yPercent: Float, source: Int) {
         contrVM.aileron = xPercent
         contrVM.elevator = yPercent

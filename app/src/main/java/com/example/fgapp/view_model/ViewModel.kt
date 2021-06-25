@@ -9,7 +9,6 @@ object ViewModel : ConnectionVM, ControllersVM {
         return  model.connect(ip, port)
     }
 
-    override var isConnected: Boolean = false
     override var aileron: Float = 0.0F
         set(value) {
             model.changeVar("aileron", value)
