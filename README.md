@@ -1,6 +1,6 @@
-# Flight Gear Controller Android-App
+# FlightGear Controller Android-App
 
-In this project, we created an android application that can connect to a Flight Gear server and controll the plane.
+In this project, we created an android application that can connect to a FlightGear server and controll the plane.
 
 [A demonstration of the project](link)
 
@@ -24,25 +24,8 @@ the `index.html` includes (refers to) the `js` files and the `css` files in orde
 [for more info of the view look here](View.md)
 
 ## Download and Set-Up Instruction:
-the following tools are required, make sure you first install them:
-- python - 3.5 and above
-- flask framework
-- ZODB - python library
+-FlightGear
 
-the recommended way is to install python and pip. and then install the packages via pip:
-```sh
-pip install flask
-pip install ZODB
-```
-
-
-
-To run the server run the `app.py` file:
-```sh
-python app.py
-```
-or: 
-```sh 
-python3 app.py
-```
-(depending on the way you run python 3)
+## Building and running instructions:
+##### open the FlightGear:
+- choose the `Browse .exe` option after choosing `Browse Files`;  then you should select the `fgfs.exe` file in the bin folder. its default path would be: `C:\Program Files\FlightGear 2020.3.6\bin\fgfs.exe`
