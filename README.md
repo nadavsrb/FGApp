@@ -38,7 +38,7 @@ it should loock like this:
 -now open the app and in the first activity:
 
 <p align="center">
-<img src="readme-resources/first_activity.PNG" width="400"/>
+<img src="readme-resources/first_activity.PNG" width="300"/>
 </p>
 
 now you need to enter the `ip` 
