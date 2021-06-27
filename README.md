@@ -23,4 +23,18 @@ is responsible for the visual part, and for invoking commands as response to the
 
 ## Building and running instructions:
 ##### open the FlightGear:
-- choose the `Browse .exe` option after choosing `Browse Files`;  then you should select the `fgfs.exe` file in the bin folder. its default path would be: `C:\Program Files\FlightGear 2020.3.6\bin\fgfs.exe`
+-open the `FlightGear` now in the Setting->Additional Settings add this line:
+`--telnet=socket,in,10,127.0.0.1,6400,tcp`
+it should loock like this:
+![FG settings](readme-resources/fg_settings.PNG?raw=TRUE "FG settings")
+
+-press 'Fly!' and wait for `FlightGear` to upload.
+
+-now you can press `v` to chnge the view.
+
+-now open the app and in the first activity:
+![first activity](readme-resources/first_activity.PNG?raw=TRUE "first activity")
+
+now you need to enter the `ip` 
+in the local network - of the device running the ip, and the `port` of the 
+`FlightGear` and press connect and now you would be pass to the controller activity.
