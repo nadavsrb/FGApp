@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">FGApp</string>
+    <string name="empty_str"></string>
+    <string name="error_ip">Error: This Isn\'t An IP!!!</string>
+    <string name="error_port">Error: Port Should Be An Integer!!!</string>
+    <string name="error_missing_fields">Error: Missing Fields!!!</string>
+    <string name="error_failed_connecting">Error: Unable To Connect FG!!!</string>
+    <string name="connecting">Trying To Connect...</string>
+    <string name="enter_fg_local_ip">Enter FG Local IP</string>
+    <string name="enter_fg_port">Enter FG Port</string>
+    <string name="fg_ip">FG IP:</string>
+    <string name="fg_port">FG Port:</string>
+    <string name="connect_to_fg">Connect To FG</string>
+    <string name="rudder">Rudder</string>
+    <string name="throttle">Throttle</string>
 </resources>
