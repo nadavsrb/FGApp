@@ -4,6 +4,7 @@ In this project, we created an android application that can connect to a FlightG
 
 [A demonstration of the project](link)
 
+![demonstration image](readme-resources/demo.PNG?raw=TRUE "demonstration image")
 
 ## Project Structure:
 we used the MVVM architecture in order to create the app.
