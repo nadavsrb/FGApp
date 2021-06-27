@@ -1,4 +1,4 @@
-![uml](readme-resources/uml.png?raw=TRUE "view-uml")
+![uml](readme-resources/uml.jpg?raw=TRUE "view-uml")
 
 
 #### The View:
