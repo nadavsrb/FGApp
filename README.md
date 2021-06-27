@@ -26,14 +26,20 @@ is responsible for the visual part, and for invoking commands as response to the
 -open the `FlightGear` now in the Setting->Additional Settings add this line:
 `--telnet=socket,in,10,127.0.0.1,6400,tcp`
 it should loock like this:
-![FG settings](readme-resources/fg_settings.PNG?raw=TRUE "FG settings")
+
+<p align="center">
+<img src="readme-resources/fg_settings.PNG" width="400"/>
+</p>
 
 -press 'Fly!' and wait for `FlightGear` to upload.
 
 -now you can press `v` to chnge the view.
 
 -now open the app and in the first activity:
-![first activity](readme-resources/first_activity.PNG?raw=TRUE "first activity")
+
+<p align="center">
+<img src="readme-resources/first_activity.PNG" width="400"/>
+</p>
 
 now you need to enter the `ip` 
 in the local network - of the device running the ip, and the `port` of the 
