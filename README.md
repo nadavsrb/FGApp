@@ -14,6 +14,7 @@ is responsible for connecting to the FlightGear and send it commands.
 is mainly responsible for linking these two parts,  and in some cases for converting the data from one representation to another.
 #### the view:
 is responsible for the visual part, and for invoking commands as response to the user actions.
+[for more info of the structure look here](Sturcture.md)
 
 
 ## Download and Set-Up Instruction:
