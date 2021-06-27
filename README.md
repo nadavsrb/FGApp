@@ -4,6 +4,7 @@ In this project, we created an android application that can connect to a FlightG
 
 [A demonstration of the project](link)
 
+![demonstration image](readme-resources/demo.PNG?raw=TRUE "demonstration image")
 
 ## Project Structure:
 we used the MVVM architecture in order to create the app.
@@ -14,7 +15,7 @@ is responsible for connecting to the FlightGear and send it commands.
 is mainly responsible for linking these two parts,  and in some cases for converting the data from one representation to another.
 #### the view:
 is responsible for the visual part, and for invoking commands as response to the user actions.
-[for more info of the structure look here](Sturcture.md)
+[for more info of the structure look here](Structure.md)
 
 
 ## Download and Set-Up Instruction:
@@ -22,4 +23,18 @@ is responsible for the visual part, and for invoking commands as response to the
 
 ## Building and running instructions:
 ##### open the FlightGear:
-- choose the `Browse .exe` option after choosing `Browse Files`;  then you should select the `fgfs.exe` file in the bin folder. its default path would be: `C:\Program Files\FlightGear 2020.3.6\bin\fgfs.exe`
+-open the `FlightGear` now in the Setting->Additional Settings add this line:
+`--telnet=socket,in,10,127.0.0.1,6400,tcp`
+it should loock like this:
+![FG settings](readme-resources/fg_settings.PNG?raw=TRUE "FG settings")
+
+-press 'Fly!' and wait for `FlightGear` to upload.
+
+-now you can press `v` to chnge the view.
+
+-now open the app and in the first activity:
+![first activity](readme-resources/first_activity.PNG?raw=TRUE "first activity")
+
+now you need to enter the `ip` 
+in the local network - of the device running the ip, and the `port` of the 
+`FlightGear` and press connect and now you would be pass to the controller activity.
