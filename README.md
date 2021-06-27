@@ -42,5 +42,5 @@ it should loock like this:
 </p>
 
 now you need to enter the `ip` 
-in the local network - of the device running the ip, and the `port` of the 
+in the local network - of the device running the `FlightGear`, and the `port` of the 
 `FlightGear` and press connect and now you would be pass to the controller activity.
