@@ -2,7 +2,7 @@
 
 In this project, we created an android application that can connect to a FlightGear server and controll the plane.
 
-[A demonstration of the project](link)
+[A demonstration of the project](https://youtu.be/bFKtNbENRIM)
 
 ![demonstration image](readme-resources/demo.PNG?raw=TRUE "demonstration image")
 
