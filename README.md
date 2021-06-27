@@ -45,4 +45,4 @@ now you need to enter the `ip`
 in the local network - of the device running the `FlightGear`, and the `port` of the 
 `FlightGear` and press connect and now you would be pass to the controller activity.
 
-- make sure you start the engine before using the controllers by pressing in the `FlightGear`: Cessna C172P->Autostart
+-make sure you start the engine before using the controllers by pressing in the `FlightGear`: Cessna C172P->Autostart
